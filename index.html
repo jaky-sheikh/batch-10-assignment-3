@@ -11,6 +11,20 @@
     <!-- Daisyui and tailwind cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            },
+          backgroundImage: {
+            paperBg: "url('./assets/bg.jpg')",
+          }
+          }
+        }
+      }
+    </script>
     <!-- fontawesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <style>
@@ -191,9 +205,42 @@
           </div>
          </section>
         <!-- portfolio section design end -->
+         <!-- challenge form part design start -->
+          <section class="container mx-auto bg-paperBg bg-no-repeat bg-cover">
+            <div class="lg:max-w-4xl lg:mx-auto mx-6">
+              <div class="flex flex-col items-center text-center">
+                <button class="btn btn-wide text-sm font-bold text-[#494949] bg-[#acef5f71] rounded-full mt-4"><i class="fa-solid fa-arrow-right text-black"></i>Let’s Connect</button> <br>
+                <h2 class="text-4xl font-bold font-[#212121]">Let’s Discuss Next Project</h2> <br>
+                <p class="text-sm font-medium text-[#494949]">Barn House Ideas is a store with designs [plans] of energy-efficient <br> houses in the type of modern barn and a blog about the realization.</p>
+              </div>
+              <div class="lg:col-span-2">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                  <div class="mt-4">
+                    <input class="p-4 border-none outline-none rounded-full bg-[#ffffff] w-full" type="text" placeholder="First Name*">
+                  </div>
+                  <div class="mt-4">
+                    <input class="p-4 border-none outline-none rounded-full bg-[#ffffff] w-full" type="text" placeholder="Last Name*">
+                  </div>
+                  <div class="mt-4">
+                    <input class="p-4 border-none outline-none rounded-full bg-[#ffffff] w-full" type="text" placeholder="Phone number*">
+                  </div>
+                  <div class="mt-4">
+                    <input class="p-4 border-none outline-none rounded-full bg-[#ffffff] w-full" type="text" placeholder="Email number*">
+                  </div>
+                  <div class="lg:col-span-2">
+                    <textarea rows="6" class="p-4 border-none outline-none rounded-2xl bg-[#ffffff] w-full" name="" id="">Write your message here</textarea>
+                  </div>
+                  <div class="lg:col-span-2">
+                    <button class="px-3 py-3 bg-[#ABEF5F] rounded-full text-lg font-extrabold text-[#1C1C1C] w-full">Send Mail <i class="fa-solid fa-arrow-right -rotate-45 text-white bg-[#1C1C1C] rounded-full w-5 h-5"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+         <!-- challenge form part design end -->
     </main>
     <footer>
-
+      
     </footer>
 </body>
 </html>
